@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="ar" dir="rtl">
+<head>
+  <meta charset="UTF-8" />
+  <title>قرية النسيان</title>
+  <link href="https://fonts.googleapis.com/css2?family=Cairo&display=swap" rel="stylesheet">
+  <style>
+    body {
+      margin: 0;
+      padding: 0;
+      font-family: 'Cairo', sans-serif;
+      background-image: url('P1.jpg');
+      background-size: cover;
+      background-position: center;
+      background-attachment: fixed;
+      height: 100vh;
+      color: #fff;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: center;
+      text-shadow: 2px 2px 5px black;
+    }
+
+    h1 {
+      font-size: 4em;
+      margin-bottom: 30px;
+      color: crimson;
+      letter-spacing: 6px;
+    }
+
+    p {
+      font-size: 1.4em;
+      max-width: 80%;
+      line-height: 2.2;
+      margin-bottom: 40px;
+      background-color: rgba(0, 0, 0, 0.6);
+      padding: 20px;
+      border-radius: 10px;
+      border: 1px solid crimson;
+    }
+
+    button {
+      padding: 15px 40px;
+      font-size: 1.5em;
+      background-color: black;
+      color: crimson;
+      border: 2px solid crimson;
+      border-radius: 10px;
+      cursor: pointer;
+      transition: 0.3s ease;
+    }
+
+    button:hover {
+      background-color: crimson;
+      color: black;
+    }
+  </style>
+</head>
+<body>
+
+  <h1>قرية النسيان</h1>
+  <p>مرحبًا بك في أعمق كوابيسك... قرية اختفى فيها الجميع، وما بقي سوى الأصوات والصرخات التي لم تكتب النهاية.</p>
+  <button onclick="window.location.href='chapter1.html'">ابدأ القصة</button>
+
+  <!-- الصوت الأول -->
+  <audio id="ses1" autoplay loop>
+    <source src="sounds/ses1.mp3" type="audio/mp3">
+  </audio>
+
+  <!-- الصوت الثاني -->
+  <audio id="ses2" autoplay loop>
+    <source src="sounds/ses2.mp3" type="audio/mp3">
+  </audio>
+
+  <script>
+    document.getElementById("ses1").volume = 1.0; // نسبة الصوت الأول
+    document.getElementById("ses2").volume = 1.0; // نسبة الصوت الثاني
+  </script>
+
+</body>
+</html>
